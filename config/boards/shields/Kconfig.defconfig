@@ -1,0 +1,16 @@
+if SHIELD_BOREALIS_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Borealis"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_BOREALIS_LEFT|| SHIELD_BOREALIS_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
